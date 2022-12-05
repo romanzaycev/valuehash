@@ -1,0 +1,29 @@
+{
+  "name": "romanzaycev/valuehash",
+  "authors": [
+    {
+      "name": "Roman Zaycev",
+      "email": "box@romanzaycev.ru",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">= 8.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Romanzaycev\\ValueHash\\": "src/Romanzaycev/ValueHash"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Romanzaycev\\ValueHash\\Tests\\": "tests/Romanzaycev/ValueHash/Tests"
+    }
+  },
+  "scripts": {
+    "test": "XDEBUG_MODE=coverage phpunit"
+  }
+}
